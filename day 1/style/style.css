@@ -4,12 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 .btn {
@@ -18,4 +23,12 @@
   color: white;
   background-color: black;
   border: 1px solid transparent;
+}
+
+header {
+  height: 100px;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
