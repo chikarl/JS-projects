@@ -3,3 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 500px;
+  background-color: aquamarine;
+  padding: 50px;
+}
+
+.btn {
+  padding: 15px 20px;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.quote {
+  padding: 20px 0;
+}
+
+.author {
+  float: right;
+  color: rgb(54, 40, 173);
+  font-weight: 700;
+  font-size: 20px;
+}
