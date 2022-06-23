@@ -8,10 +8,11 @@ from.addEventListener("submit", function (e) {
   console.log(textInput.value);
   if (textInput.value == '') {
     inputError.classList.add("show")
+    setTimeout(() => {
+      inputError.classList.remove("show")
+    }, 2000)
   } else {
     message.textContent = textInput.value
-    inputError.classList.remove("show")
     textInput.value = ''
-
   }
 })
