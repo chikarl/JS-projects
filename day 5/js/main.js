@@ -27,10 +27,10 @@ buttonReset.addEventListener("click", function () {
   hours = 00
   min = 00
   clearInterval(interval)
+  appendHours.classList.remove("show")
+  appendMin.classList.remove('show')
   appendSeconds.innerHTML = '00'
   appendTens.innerHTML = '00'
-  appendHours.innerHTML = '00'
-  appendMin.innerHTML = '00'
 
 })
 
@@ -48,13 +48,15 @@ function startTimer() {
   if (seconds > 59) {
     min++
     seconds = 00
-    appendMin.innerHTML = numTo(min)
+    appendMin.classList.add("show")
+    appendMin.innerHTML = numTo(min) + " : "
   }
 
   if (min > 59) {
     hours++
     min = 00
-    appendHours.innerHTML = numTo(hours)
+    appendHours.classList.add("show")
+    appendHours.innerHTML = numTo(hours) + " : "
   }
 }
 
