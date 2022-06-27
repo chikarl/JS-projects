@@ -8,10 +8,12 @@ btns.forEach(btn => {
     if (btn.classList.contains("increase")) {
       num++
       text.textContent = num
+      console.log(num);
     }
     else if (btn.classList.contains("prev")) {
       num--
       text.textContent = num
+      console.log(num);
     } else {
       num = 0
       text.textContent = num
@@ -19,3 +21,13 @@ btns.forEach(btn => {
   })
 
 });
+
+function numColor(num) {
+  if (num > 0) {
+    text.style.color = "green"
+    // console.log();
+  } else if (num < 0) {
+    text.style.color = "red"
+  }
+
+}
