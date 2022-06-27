@@ -3,3 +3,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: aquamarine;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+span {
+  display: none;
+  font-size: 50px;
+}
+
+span.min-sec {
+  font-size: 30px;
+}
+
+span.show {
+  display: inline;
+}
